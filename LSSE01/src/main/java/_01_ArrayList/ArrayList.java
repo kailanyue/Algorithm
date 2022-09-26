@@ -59,7 +59,7 @@ public class ArrayList<E> {
 		rangeCheckForAdd(index);
 		ensureCapacity(size + 1);
 
-		for (int i = size; i > index; i++) {
+		for (int i = size; i > index; i--) {
 			elements[i] = elements[i - 1];
 		}
 		elements[index] = element;
@@ -75,6 +75,8 @@ public class ArrayList<E> {
 			elements[i - 1] = elements[i];
 		}
 		elements[--size] = null;
+
+		trim();
 		return value;
 	}
 
@@ -112,6 +114,23 @@ public class ArrayList<E> {
 
 		System.out.println(oldCapacity + "扩容为" + newCapacity);
 	}
+
+
+	private void trim() {
+		int oldCapacity = elements.length;
+		int newCapacity = oldCapacity >> 1;
+		if (size > newCapacity || oldCapacity <= DEFAULT_CAPACITY) return;
+
+		// 剩余空间还很多
+		E[] newElements = (E[]) new Object[newCapacity];
+		for (int i = 0; i < size; i++) {
+			newElements[i] = elements[i];
+		}
+		elements = newElements;
+
+		System.out.println(oldCapacity + "缩容为" + newCapacity);
+	}
+
 
 	private void outOfBounds(int index) {
 		throw new IndexOutOfBoundsException("Index:" + index + ", Size:" + size);
