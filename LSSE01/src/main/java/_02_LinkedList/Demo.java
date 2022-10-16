@@ -1,5 +1,6 @@
 package _02_LinkedList;
 
+import _02_LinkedList.doublelinked.MyDoubleLinkedList;
 import _02_LinkedList.single.MySingleLinkedList;
 
 /**
@@ -8,7 +9,7 @@ import _02_LinkedList.single.MySingleLinkedList;
  */
 public class Demo {
     public static void main(String[] args) {
-        MyList<Integer> list = new MySingleLinkedList<>();
+        MyList<Integer> list = new MyDoubleLinkedList<>();
         testList(list);
     }
 
@@ -33,7 +34,7 @@ public class Demo {
 
 
         list.remove(list.size() - 1); // [11, 66, 33, 44]
-
+        System.out.println(list);
         list.set(0, 99);
 
         Asserts.test(list.indexOf(44) == 3);
