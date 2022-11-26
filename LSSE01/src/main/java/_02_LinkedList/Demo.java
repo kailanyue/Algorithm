@@ -1,5 +1,7 @@
 package _02_LinkedList;
 
+import _02_LinkedList.circle.MyDoubleCircleLinkedList;
+import _02_LinkedList.circle.MySingleCircleLinkedList;
 import _02_LinkedList.doublelinked.MyDoubleLinkedList;
 import _02_LinkedList.single.MySingleLinkedList;
 
@@ -9,9 +11,27 @@ import _02_LinkedList.single.MySingleLinkedList;
  */
 public class Demo {
     public static void main(String[] args) {
-        MyList<Integer> list = new MyDoubleLinkedList<>();
+        MyList<Integer> list = new MyDoubleCircleLinkedList<>();
         testList(list);
+        josephus();
     }
+
+    static void josephus() {
+        MyDoubleCircleLinkedList<Integer> list = new MyDoubleCircleLinkedList<>();
+        for (int i = 1; i <= 8; i++) {
+            list.add(i);
+        }
+
+        // 指向头结点（指向1）
+        list.reset();
+
+        while (!list.isEmpty()) {
+            list.next();
+            list.next();
+            System.out.print(list.remove() + " ");
+        }
+    }
+
 
     static void testList(MyList<Integer> list) {
         list.add(11);

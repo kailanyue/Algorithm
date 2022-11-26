@@ -2,7 +2,6 @@ package _02_LinkedList.single;
 
 
 import _02_LinkedList.MyAbstractList;
-import _02_LinkedList.MyList;
 
 /**
  * @author ngt
@@ -51,10 +50,6 @@ public class MySingleLinkedList<E> extends MyAbstractList<E>  {
         return oldValue;
     }
 
-    /**
-     * @param index
-     * @param element
-     */
     @Override
     public void add(int index, E element) {
         rangeCheckForAdd(index);

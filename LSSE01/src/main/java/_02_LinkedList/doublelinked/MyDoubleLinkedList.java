@@ -71,11 +71,7 @@ public class MyDoubleLinkedList<E> extends MyAbstractList<E> {
         node.element = element;
         return oldValue;
     }
-
-    /**
-     * @param index
-     * @param element
-     */
+    
     @Override
     public void add(int index, E element) {
         rangeCheckForAdd(index);
@@ -155,19 +151,19 @@ public class MyDoubleLinkedList<E> extends MyAbstractList<E> {
 
     private Node<E> node(int index) {
         rangeCheck(index);
+        Node<E> node;
         if (index < (size >> 1)) {
-            Node<E> node = first;
+            node = first;
             for (int i = 0; i < index; i++) {
                 node = node.next;
             }
-            return node;
         } else {
-            Node<E> node = last;
+            node = last;
             for (int i = size - 1; i > index; i--) {
                 node = node.prev;
             }
-            return node;
         }
+        return node;
     }
 
     @Override

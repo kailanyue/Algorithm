@@ -2,7 +2,6 @@ package _02_LinkedList.single;
 
 
 import _02_LinkedList.MyAbstractList;
-import _02_LinkedList.MyList;
 
 /**
  * @author ngt
@@ -10,7 +9,7 @@ import _02_LinkedList.MyList;
  * 增加虚拟头节点 需要调整 6 个地方
  * 构造函数 增加元素 删除元素  indeexOf node toString 所有涉及到元素位置的地方
  */
-public class MySingleLinkedList1<E> extends MyAbstractList<E> implements MyList<E> {
+public class MySingleLinkedList1<E> extends MyAbstractList<E> {
     // 1. 增加构造函数
 
     public MySingleLinkedList1() {
