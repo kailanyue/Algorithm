@@ -71,7 +71,7 @@ public class MyDoubleLinkedList<E> extends MyAbstractList<E> {
         node.element = element;
         return oldValue;
     }
-    
+
     @Override
     public void add(int index, E element) {
         rangeCheckForAdd(index);
