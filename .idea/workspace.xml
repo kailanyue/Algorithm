@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e303563b-cdaa-48e3-b0d0-5a30b24bee1d" name="Changes" comment="add stack">
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_04_Queue/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_04_Queue/MyCircleDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_04_Queue/MyCircleQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_04_Queue/MyDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_04_Queue/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinarySearchTree1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinarySearchTree2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/BinaryTreeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/BinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/InorderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/LevelOrderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/MyFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/treeprinter/Strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="e303563b-cdaa-48e3-b0d0-5a30b24bee1d" name="Changes" comment="add Queue and BinarySearchTree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LSSE01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LSSE01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +54,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.customizations"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -183,7 +165,7 @@
       <workItem from="1669552639965" duration="5515000" />
       <workItem from="1669819323706" duration="2725000" />
       <workItem from="1669904481953" duration="10459000" />
-      <workItem from="1670071136393" duration="9118000" />
+      <workItem from="1670071136393" duration="10180000" />
     </task>
     <task id="LOCAL-00001" summary="add ArrayList">
       <created>1663150599693</created>
@@ -213,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669737269346</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Queue and BinarySearchTree">
+      <created>1670090904855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670090904855</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +221,8 @@
     <MESSAGE value="add SingleLikedList" />
     <MESSAGE value="链表完成" />
     <MESSAGE value="add stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="add stack" />
+    <MESSAGE value="add Queue and BinarySearchTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Queue and BinarySearchTree" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
