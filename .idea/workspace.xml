@@ -4,9 +4,108 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e303563b-cdaa-48e3-b0d0-5a30b24bee1d" name="Changes" comment="add Queue and BinarySearchTree">
+    <list default="true" id="e303563b-cdaa-48e3-b0d0-5a30b24bee1d" name="Changes" comment="update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AVLtree.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AVLtree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/AVL.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/AVL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Algorithm.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Algorithm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BPlusTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BPlusTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BST.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BST.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BucketSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/BucketSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ClosedHash.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ClosedHash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ClosedHashBucket.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ClosedHashBucket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ComparisonSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ComparisonSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ConnectedComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/ConnectedComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/CountingSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/CountingSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/DFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/DFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/DijkstraPrim.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/DijkstraPrim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/EventTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/EventTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Floyd.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Floyd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Hash.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Hash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Heap.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Heap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/HeapSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/HeapSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Kruskal.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Kruskal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/MyAlgorithm.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/MyAlgorithm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/OpenHash.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/OpenHash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/RadixSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/RadixSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/RadixTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/RadixTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/RedBlack.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/RedBlack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/SimpleStack.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/SimpleStack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/SplayTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/SplayTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TST.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TST.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TestAlgorithmOld.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TestAlgorithmOld.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TopoSortDFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TopoSortDFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TopoSortIndegree.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TopoSortIndegree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Trie.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/Trie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TrinarySearchTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AlgorithmLibrary/TrinarySearchTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Algorithms.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Algorithms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AnimationLibrary/AnimatedObject.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AnimationLibrary/AnimatedObject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/AnimationLibrary/CustomEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/AnimationLibrary/CustomEvents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/BFS.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/BFS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/BPlusTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/BPlusTree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/BST.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/BST.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/BTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/BTree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/BinomialQueue.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/BinomialQueue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/BucketSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/BucketSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ChangingCoordinates2D.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ChangingCoordinates2D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ChangingCoordinates3D.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ChangingCoordinates3D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ClosedHash.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ClosedHash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ClosedHash2.JS" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ClosedHash2.JS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ClosedHashBucket.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ClosedHashBucket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ComparisonSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ComparisonSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ConnectedComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ConnectedComponent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/CountingSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/CountingSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/DFS.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/DFS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/DPChange.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/DPChange.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/DPFib.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/DPFib.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/DPLCS.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/DPLCS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Dijkstra.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Dijkstra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/DisjointSets.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/DisjointSets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/FibonacciHeap.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/FibonacciHeap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Floyd.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Floyd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Heap.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Heap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/HeapSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/HeapSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Kruskal.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Kruskal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/LeftistHeap.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/LeftistHeap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/OpenHash.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/OpenHash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Prim.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Prim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/QueueArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/QueueArray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/QueueLL.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/QueueLL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RadixSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RadixSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RadixTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RadixTree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RecFact.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RecFact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RecQueens.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RecQueens.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RecReverse.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RecReverse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RedBlack.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RedBlack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RotateScale2D.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RotateScale2D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RotateScale3D.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RotateScale3D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/RotateTranslate2D.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/RotateTranslate2D.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Search.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/SimpleStack.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/SimpleStack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/SkewHeap.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/SkewHeap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/SplayTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/SplayTree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/StackArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/StackArray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/StackLL.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/StackLL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/TST.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/TST.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ThirdParty/jquery-1.5.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ThirdParty/jquery-1.5.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ThirdParty/jquery-ui-1.8.11.custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ThirdParty/jquery-ui-1.8.11.custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/ThirdParty/jquery-ui-1.8.11.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/ThirdParty/jquery-ui-1.8.11.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/TopoSortDFS.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/TopoSortDFS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/TopoSortIndegree.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/TopoSortIndegree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/Trie.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/Trie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/VisualizationLibrary" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/VisualizationLibrary" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/bugfeature.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/bugfeature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/flash.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/flash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/slideTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/slideTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/source.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/visualPages.css" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/visualPages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSENote/Visualization/visualizationPageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/LSSENote/Visualization/visualizationPageStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +152,8 @@
     "last_opened_file_path": "D:/Project/Algorithm/LSSE01/src/main/java/treeprinter",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "project.structure.side.proportion": "0.40344828",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -165,7 +264,9 @@
       <workItem from="1669552639965" duration="5515000" />
       <workItem from="1669819323706" duration="2725000" />
       <workItem from="1669904481953" duration="10459000" />
-      <workItem from="1670071136393" duration="10180000" />
+      <workItem from="1670071136393" duration="10337000" />
+      <workItem from="1670140785994" duration="1226000" />
+      <workItem from="1670142714868" duration="2347000" />
     </task>
     <task id="LOCAL-00001" summary="add ArrayList">
       <created>1663150599693</created>
@@ -202,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670090904855</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update README.md">
+      <created>1670091472045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670091472045</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +330,8 @@
     <MESSAGE value="链表完成" />
     <MESSAGE value="add stack" />
     <MESSAGE value="add Queue and BinarySearchTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Queue and BinarySearchTree" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

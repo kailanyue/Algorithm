@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01.sort/01.sort.iml" filepath="$PROJECT_DIR$/01.sort/01.sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02.Union/02.Union.iml" filepath="$PROJECT_DIR$/02.Union/02.Union.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03.graph/03.graph.iml" filepath="$PROJECT_DIR$/03.graph/03.graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04.Recursion/04.Recursion.iml" filepath="$PROJECT_DIR$/04.Recursion/04.Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05.BackTracking/05.BackTracking.iml" filepath="$PROJECT_DIR$/05.BackTracking/05.BackTracking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06.Greedy/06.Greedy.iml" filepath="$PROJECT_DIR$/06.Greedy/06.Greedy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07.Divide and conquer/07.Divide and conquer.iml" filepath="$PROJECT_DIR$/07.Divide and conquer/07.Divide and conquer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08.Dynamic programming/08.Dynamic programming.iml" filepath="$PROJECT_DIR$/08.Dynamic programming/08.Dynamic programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09.BloomFilter/09.BloomFilter.iml" filepath="$PROJECT_DIR$/09.BloomFilter/09.BloomFilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10.SkipList/10.SkipList.iml" filepath="$PROJECT_DIR$/10.SkipList/10.SkipList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11.String/11.String.iml" filepath="$PROJECT_DIR$/11.String/11.String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE02.iml" filepath="$PROJECT_DIR$/SE02.iml" />
+    </modules>
+  </component>
+</project>
