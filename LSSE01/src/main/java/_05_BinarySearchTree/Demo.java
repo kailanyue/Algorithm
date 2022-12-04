@@ -12,7 +12,7 @@ import java.util.Comparator;
  */
 public class Demo {
 	public static void main(String[] args) {
-		traversalTest();
+		testTreeComplete();
 	}
 
 	/**
@@ -66,7 +66,8 @@ public class Demo {
 	/**
 	 * 四种遍历策略，以及自定义输出策略
 	 */
-	private static void traversalTest() {
+
+	private static void traversalTest1() {
 		Integer[] data = new Integer[]{
 				7, 4, 9, 2, 5, 8, 11, 3, 12, 1
 		};
@@ -91,5 +92,88 @@ public class Demo {
 		// 层序遍历
 		System.out.println("\n------------- LevelOrderTraversal -------------");
 		bst1.levelOrderTraversal();
+	}
+
+	/**
+	 * 四种遍历策略，以及自定义输出策略
+	 */
+
+	private static void traversalTest2() {
+		Integer[] data = new Integer[]{
+				7, 4, 9, 2, 5, 8, 11, 3, 12, 1
+		};
+		MyBinarySearchTree2<Integer> bst1 = new MyBinarySearchTree2<>(a -> System.out.print(a * 10 + " "));
+		for (Integer datum : data) {
+			bst1.add(datum);
+		}
+		BinaryTrees.println(bst1);
+
+		// 前序遍历
+		System.out.println("\n------------- PreorderTraversal -------------");
+		bst1.preorder(new MyBinarySearchTree2.Visitor<Integer>() {
+			@Override
+			public boolean visit(Integer element) {
+				System.out.print(element + " ");
+				return element == 2;
+			}
+		});
+
+		// 中序遍历
+		System.out.println("\n------------- InorderTraversal -------------");
+		bst1.inorder(new MyBinarySearchTree2.Visitor<Integer>() {
+			@Override
+			public boolean visit(Integer element) {
+				System.out.print(element + " ");
+				return element == 2;
+			}
+		});
+
+		// 后序遍历
+		System.out.println("\n------------- PostorderTraversal -------------");
+		bst1.postorder(new MyBinarySearchTree2.Visitor<Integer>() {
+			@Override
+			public boolean visit(Integer element) {
+				System.out.print(element + " ");
+				return element == 4;
+			}
+		});
+
+		// 层序遍历
+		System.out.println("\n------------- LevelOrderTraversal -------------");
+		bst1.levelOrder(new MyBinarySearchTree2.Visitor<Integer>() {
+			@Override
+			public boolean visit(Integer element) {
+				System.out.print(element + " ");
+				return element == 2;
+			}
+		});
+	}
+
+	private static void testTreeHeight() {
+		MyBinarySearchTree2<Integer> bst = new MyBinarySearchTree2<>();
+		for (int i = 0; i < 30; i++) {
+			bst.add((int) (Math.random() * 100));
+		}
+
+		BinaryTrees.println(bst);
+
+		System.out.println("递归算法获取的树的高度：" + bst.height1());
+		System.out.println("迭代算法获取的树的高度：" + bst.height2());
+
+	}
+
+
+	private static void testTreeComplete(){
+		Integer[] data = new Integer[] {
+				7, 4, 9, 2, 5
+		};
+
+		MyBinarySearchTree2<Integer> bst = new MyBinarySearchTree2<>();
+		for (Integer datum : data) {
+			bst.add(datum);
+		}
+
+		BinaryTrees.println(bst);
+		System.out.println(bst.isComplete());
 	}
 }

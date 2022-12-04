@@ -10,11 +10,10 @@ import java.util.function.Consumer;
 /**
  * @author ngt on 2022-12-03 20:01
  * @version 1.0
- *
- * 1.
- * 2.
- * 3.
- * 4.
+ * <p>
+ * 1. 遍历接口实现
+ * 2. 使用递归及迭代两种算法计算二叉树的高度
+ * 3. 判定二叉树是否为完全二叉树
  */
 public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 
@@ -27,6 +26,28 @@ public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 
 	// 用于接收自定义 visit 策略
 	private final Consumer<E> consumer;
+
+	private static class Node<E> {
+		E element;
+		Node<E> left;
+
+		Node<E> right;
+		Node<E> parent;
+
+		public Node(E element, Node<E> parent) {
+			this.element = element;
+			this.parent = parent;
+		}
+
+		public boolean isLeaf() {
+			return left == null && right == null;
+		}
+
+		public boolean hasTwoChildren() {
+			return left != null && right != null;
+		}
+	}
+
 
 	public MyBinarySearchTree2() {
 		this(null, null);
@@ -44,7 +65,6 @@ public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 		this.comparator = comparator;
 		this.consumer = consumer;
 	}
-
 
 	/**
 	 * 对象的比较策略，如果未输入就使用对象默认比较方法
@@ -75,19 +95,15 @@ public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 
 	}
 
+	/**
+	 * 范围操作抽象类
+	 *
+	 * @param <E>
+	 */
+	public static abstract class Visitor<E> {
+		boolean stop;
 
-	private static class Node<E> {
-		E element;
-		Node<E> left;
-
-		Node<E> right;
-		Node<E> parent;
-
-		public Node(E element, Node<E> parent) {
-			this.element = element;
-			this.parent = parent;
-		}
-
+		public abstract boolean visit(E element);
 	}
 
 	public int size() {
@@ -164,71 +180,182 @@ public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 	// 遍历操作
 
 	// 前序遍历（Preorder Traversal）
-	public void preorderTraversal() {
-		preorderTraversal(root);
+	public void preorder(Visitor<E> visitor) {
+		if (visitor == null) return;
+		preorder(root, visitor);
 	}
 
-	private void preorderTraversal(Node<E> node) {
-		if (node == null) return;
+	private void preorder(Node<E> node, Visitor<E> visitor) {
+		// 当达到停止条件之后停止递归操作
+		if (node == null || visitor.stop) return;
 
-		visit(node);
-		preorderTraversal(node.left);
-		preorderTraversal(node.right);
+		visitor.stop = visitor.visit(node.element);
+		preorder(node.left, visitor);
+		preorder(node.right, visitor);
 	}
 
 	// 中序遍历（Inorder Traversal）
-	public void inorderTraversal() {
-		inorderTraversal(root);
+	public void inorder(Visitor<E> visitor) {
+		if (visitor == null) return;
+		inorder(root, visitor);
 	}
 
-	private void inorderTraversal(Node<E> node) {
-		if (node == null) return;
+	private void inorder(Node<E> node, Visitor<E> visitor) {
+		if (node == null || visitor == null) return;
 
-		inorderTraversal(node.left);
-		visit(node);
-		inorderTraversal(node.right);
+		inorder(node.left, visitor);
+		// 当达到停止条件之后停止递归操作
+		if (visitor.stop) return;
+		visitor.stop = visitor.visit(node.element);
+		inorder(node.right, visitor);
 	}
 
 	// 后序遍历（Postorder Traversal）
-	public void postorderTraversal() {
-		postorderTraversal(root);
+	public void postorder(Visitor<E> visitor) {
+		if (visitor == null) return;
+		postorder(root, visitor);
 	}
 
-	private void postorderTraversal(Node<E> node) {
-		if (node == null) return;
+	private void postorder(Node<E> node, Visitor<E> visitor) {
+		if (node == null || visitor.stop) return;
 
-		postorderTraversal(node.left);
-		postorderTraversal(node.right);
-		visit(node);
+		postorder(node.left, visitor);
+		postorder(node.right, visitor);
+		if (visitor.stop) return;
+		visitor.stop = visitor.visit(node.element);
 	}
 
 	// 层序遍历（Level Order Traversal）
-	public void levelOrderTraversal() {
-		levelOrderTraversal(root);
+	public void levelOrder(Visitor<E> visitor) {
+		if (visitor == null) return;
+		levelOrder(root, visitor);
 	}
 
-	private void levelOrderTraversal(Node<E> node) {
-		if (node == null) return;
+	private void levelOrder(Node<E> root, Visitor<E> visitor) {
+		if (root == null || visitor == null) return;
 
 		Queue<Node<E>> queue = new LinkedList<>();
-
-		// 添加元素
-		queue.offer(node);
+		queue.offer(root);
 
 		while (!queue.isEmpty()) {
-			Node<E> next = queue.poll();
-			visit(next);
+			Node<E> node = queue.poll();
+			if (visitor.visit(node.element)) return;
 
-			if (next.left != null) {
-				queue.offer(next.left);
+			if (node.left != null) {
+				queue.offer(node.left);
 			}
 
-			if (next.right != null) {
-				queue.offer(next.right);
+			if (node.right != null) {
+				queue.offer(node.right);
 			}
 		}
 	}
 
+
+	/**
+	 * 获取树的高度，对外暴露
+	 *
+	 * @return
+	 */
+	public int height1() {
+		return height1(root);
+	}
+
+
+	/**
+	 * 使用递归的方法获取树的高度
+	 *
+	 * @param root 根节点
+	 * @return 树的高度
+	 */
+	private int height1(Node<E> root) {
+		if (root == null) return 0;
+		return 1 + Math.max(height1(root.left), height1(root.right));
+	}
+
+	/**
+	 * 使用层序算法的思路获取二叉树的高度
+	 *
+	 * @return 二叉树的高度
+	 */
+	public int height2() {
+		return height2(root);
+	}
+
+	/**
+	 * 使用层序算法的思路获取二叉树的高度
+	 *
+	 * @param root 根节点
+	 * @return 树的高度
+	 */
+	public int height2(Node<E> root) {
+		if (root == null) return 0;
+		// 树的高度
+		int height = 0;
+		// 存储着每一层的元素数量
+		int levelSize = 1;
+		Queue<Node<E>> queue = new LinkedList<>();
+		queue.offer(root);
+		while (!queue.isEmpty()) {
+			Node<E> node = queue.poll();
+			levelSize--;
+			if (node.left != null) {
+				queue.offer(node.left);
+			}
+
+			if (node.right != null) {
+				queue.offer(node.right);
+			}
+
+			if (levelSize == 0) {
+				// 访问到下一层
+				levelSize = queue.size();
+				height++;
+			}
+		}
+
+		return height;
+	}
+
+	/**
+	 * 判断一个树是不是完全二叉树
+	 * @return 是否二叉树 true false
+	 */
+	public boolean isComplete(){
+		return isComplete(root);
+	}
+
+	/**
+	 * 判断一个树是不是完全二叉树
+	 *
+	 * @param root 根节点
+	 * @return 是否二叉树 true false
+	 */
+	public boolean isComplete(Node<E> root) {
+		if (root == null) return false;
+
+		Queue<Node<E>> queue = new LinkedList<>();
+		queue.offer(root);
+
+		boolean leaf = false;
+		while (!queue.isEmpty()) {
+			Node<E> node = queue.poll();
+			if (leaf && !node.isLeaf()) return false;
+
+			if (node.left != null) {
+				queue.offer(node.left);
+			} else if (node.right != null) {
+				return false;
+			}
+
+			if (node.right != null) {
+				queue.offer(node.right);
+			} else {
+				leaf = true;
+			}
+		}
+		return true;
+	}
 
 	// 用于树的打印操作
 	@Override
