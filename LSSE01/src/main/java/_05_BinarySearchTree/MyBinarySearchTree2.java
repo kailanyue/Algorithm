@@ -14,6 +14,8 @@ import java.util.function.Consumer;
  * 1. 遍历接口实现
  * 2. 使用递归及迭代两种算法计算二叉树的高度
  * 3. 判定二叉树是否为完全二叉树
+ * 4. https://git-lfs.github.com/ 大文件的上传
+ * 5. 查询一个节点的前驱节点和后继节点
  */
 public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 
@@ -319,9 +321,10 @@ public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 
 	/**
 	 * 判断一个树是不是完全二叉树
+	 *
 	 * @return 是否二叉树 true false
 	 */
-	public boolean isComplete(){
+	public boolean isComplete() {
 		return isComplete(root);
 	}
 
@@ -356,6 +359,59 @@ public class MyBinarySearchTree2<E> implements BinaryTreeInfo {
 		}
 		return true;
 	}
+	
+	/**
+	 * 查找一个节点的前驱节点：中序遍历时的前一个节点
+	 *
+	 * @param node 节点
+	 * @return 前驱节点
+	 */
+	private Node<E> predecessor(Node<E> node) {
+		if (node == null) return null;
+
+		// 1.从该节点的左子树中寻找（一定有）
+		Node<E> p = node.left;
+		if (p != null) {
+			while (p.right != null) {
+				p = p.right;
+			}
+			return p;
+		}
+		// 2.前驱节点在父节点或者祖父节点中（不一定有）
+		while (node.parent != null && node == node.parent.left) {
+			node = node.parent;
+		}
+
+		// 1.如果 node.parent == null 没有前驱，返回 null
+		// 2.找到前驱节点，node == node.parent.right 返回 node.parent
+
+		// 两种情况归一化 返回 node.parent
+		return node.parent;
+	}
+
+
+	/**
+	 * 后继节点：后继节点：中序遍历时的后一个节点，是前驱节点的镜像问题
+	 * @param node 节点
+	 * @return 后继节点
+	 */
+	private Node<E> successor(Node<E> node){
+		if(node == null) return null;
+
+		Node<E> p = node.right;
+		if(p != null){
+			while (p.left != null){
+				p = p.left;
+			}
+			return p;
+		}
+
+		while(node.parent != null && node == node.parent.right){
+			node = node.parent;
+		}
+		return node.parent;
+	}
+
 
 	// 用于树的打印操作
 	@Override
