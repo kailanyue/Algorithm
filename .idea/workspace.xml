@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e303563b-cdaa-48e3-b0d0-5a30b24bee1d" name="Changes" comment="添加查找 前驱节点和后继节点算法">
+      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinarySearchTree3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinarySearchTree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/MyBinarySearchTree2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/LSSE01/src/main/java/_05_BinarySearchTree/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +170,7 @@
       <workItem from="1669904481953" duration="10459000" />
       <workItem from="1670071136393" duration="10337000" />
       <workItem from="1670140785994" duration="1226000" />
-      <workItem from="1670142714868" duration="16062000" />
+      <workItem from="1670142714868" duration="19969000" />
     </task>
     <task id="LOCAL-00001" summary="add ArrayList">
       <created>1663150599693</created>
@@ -232,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670172189428</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加查找 前驱节点和后继节点算法">
+      <created>1670344571030</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670344571030</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

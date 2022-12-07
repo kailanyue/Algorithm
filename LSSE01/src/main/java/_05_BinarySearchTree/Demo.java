@@ -12,7 +12,7 @@ import java.util.Comparator;
  */
 public class Demo {
 	public static void main(String[] args) {
-		testTreeComplete();
+		personTreeTest();
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class Demo {
 
 
 		// 按照年龄进行降序操作
-		MyBinarySearchTree1<Person> bst2 = new MyBinarySearchTree1<>((p1, p2) -> p2.getAge() - p1.getAge());
+		MyBinarySearchTree<Person> bst2 = new MyBinarySearchTree<>((p1, p2) -> p2.getAge() - p1.getAge());
 		for (Integer datum : data) {
 			bst2.add(new Person(datum));
 		}
@@ -149,6 +149,10 @@ public class Demo {
 		});
 	}
 
+
+	/**
+	 * height 方法测试
+	 */
 	private static void testTreeHeight() {
 		MyBinarySearchTree2<Integer> bst = new MyBinarySearchTree2<>();
 		for (int i = 0; i < 30; i++) {
@@ -163,8 +167,11 @@ public class Demo {
 	}
 
 
-	private static void testTreeComplete(){
-		Integer[] data = new Integer[] {
+	/**
+	 * isComplete 方法测试
+	 */
+	private static void testTreeComplete() {
+		Integer[] data = new Integer[]{
 				7, 4, 9, 2, 5
 		};
 
@@ -175,5 +182,44 @@ public class Demo {
 
 		BinaryTrees.println(bst);
 		System.out.println(bst.isComplete());
+	}
+
+	/**
+	 * remove 方法的测试
+	 */
+	private static void testRemove() {
+		Integer[] data = new Integer[] {
+				7, 4, 9, 2, 5, 8, 11, 3, 12, 1
+		};
+
+		MyBinarySearchTree3<Integer> bst = new MyBinarySearchTree3<>();
+		for (Integer datum : data) {
+			bst.add(datum);
+		}
+
+		BinaryTrees.println(bst);
+
+		String s = "";
+
+		bst.remove(7);
+		BinaryTrees.println(bst);
+	}
+
+	private static void testRemove1() {
+		Integer[] data = new Integer[] {
+				7, 4, 9, 2, 5, 8, 11, 3, 12, 1
+		};
+
+		MyBinarySearchTree<Integer> bst = new MyBinarySearchTree<>();
+		for (Integer datum : data) {
+			bst.add(datum);
+		}
+
+		BinaryTrees.println(bst);
+
+		String s = "";
+
+		bst.remove(7);
+		BinaryTrees.println(bst);
 	}
 }
